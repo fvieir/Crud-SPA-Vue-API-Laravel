@@ -11,9 +11,10 @@
 <script>
 export default {
  created(){
-   this.$http.get('/home').then((response)=>{
+   /* this.$http.get('/client')
+   .then((response)=>{
      console.log(response.data)
-   })
+   }) */
  }
 }
 </script>

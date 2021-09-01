@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import PageClientList from '../views/PageClientList.vue'
+import PageClientEdit from '../views/PageClientEdit.vue'
 
 Vue.use(VueRouter)
 
@@ -19,7 +20,8 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-  {path:'/client_list', name: 'PageClientList', component: PageClientList}
+  { path: '/client_list', component: PageClientList, name: 'client_list',},
+  { path: '/client_edit/:id', component: PageClientEdit, name: 'client_edit' }
 ]
 
 const router = new VueRouter({

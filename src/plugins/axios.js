@@ -2,7 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 
 
-axios.defaults.baseURL = 'http://imoveis.teste/api'
+axios.defaults.baseURL = 'https://crud-ususarios.teste/api'
 
 Vue.use({
     install(Vue) {
